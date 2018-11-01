@@ -1,0 +1,111 @@
+2018-11-01 11:33:29,489 ERROR: Exception on /reset_password_request [POST] [in /Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/fuhongzhu/fuhzblog/app/routes.py", line 209, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/fuhongzhu/fuhzblog/app/email.py", line 20, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "/Users/fuhongzhu/fuhzblog/app/models.py", line 70, in get_reset_password_token
+    {'reset_password': self.id, 'exp': time() + expires_in},
+NameError: name 'time' is not defined
+2018-11-01 11:35:00,124 INFO: Microblog startup [in /Users/fuhongzhu/fuhzblog/app/__init__.py:55]
+2018-11-01 11:35:01,263 ERROR: Exception on /reset_password_request [POST] [in /Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/fuhongzhu/fuhzblog/app/routes.py", line 209, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/fuhongzhu/fuhzblog/app/email.py", line 23, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "/Users/fuhongzhu/fuhzblog/app/models.py", line 70, in get_reset_password_token
+    {'reset_password': self.id, 'exp': time() + expires_in},
+NameError: name 'time' is not defined
+2018-11-01 11:45:27,149 ERROR: Exception on /reset_password_request [POST] [in /Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/fuhongzhu/fuhzblog/app/routes.py", line 209, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/fuhongzhu/fuhzblog/app/email.py", line 23, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "/Users/fuhongzhu/fuhzblog/app/models.py", line 70, in get_reset_password_token
+    {'reset_password': self.id, 'exp': time() + expires_in},
+NameError: name 'time' is not defined
+2018-11-01 11:47:02,960 INFO: Microblog startup [in /Users/fuhongzhu/fuhzblog/app/__init__.py:55]
+2018-11-01 11:47:11,971 ERROR: Exception on /reset_password_request [POST] [in /Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/fuhongzhu/fuhzblog/app/routes.py", line 211, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/fuhongzhu/fuhzblog/app/email.py", line 23, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "/Users/fuhongzhu/fuhzblog/app/models.py", line 70, in get_reset_password_token
+    {'reset_password': self.id, 'exp': time() + expires_in},
+NameError: name 'time' is not defined
+2018-11-01 11:49:34,933 INFO: Microblog startup [in /Users/fuhongzhu/fuhzblog/app/__init__.py:55]
+2018-11-01 11:51:03,555 ERROR: Exception on /reset_password_request [POST] [in /Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/fuhongzhu/.virtualenvs/fuhzblog-O7aarCnf/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/fuhongzhu/fuhzblog/app/routes.py", line 211, in reset_password_request
+    return redirect(url_for('login'))
+  File "/Users/fuhongzhu/fuhzblog/app/email.py", line 23, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "/Users/fuhongzhu/fuhzblog/app/models.py", line 70, in get_reset_password_token
+    {'reset_password': self.id, 'exp': time() + expires_in},
+NameError: name 'time' is not defined
+2018-11-01 11:55:57,036 INFO: Microblog startup [in /Users/fuhongzhu/fuhzblog/app/__init__.py:55]
+2018-11-01 12:03:23,812 INFO: Microblog startup [in /Users/fuhongzhu/fuhzblog/app/__init__.py:55]
+2018-11-01 14:14:56,804 INFO: Microblog startup [in /Users/fuhongzhu/fuhzblog/app/__init__.py:57]
